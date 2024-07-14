@@ -53,7 +53,7 @@ async function fillData() {
             flagsrc = flagData[0].flags.png;
         } catch (error) {
             console.error(`Error fetching flag for ${data.meals[i].strArea}:`, error);
-            flagsrc = "../media/Unknown_Flag.jpg"; // Use a default image if the flag is not found
+            flagsrc = "./media/Unknown_Flag.jpg"; // Use a default image if the flag is not found
         }
         console.log("now you are in fill data ",flagsrc);
         meals += `

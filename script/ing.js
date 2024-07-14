@@ -14,7 +14,7 @@ async function fillData() {
     for(let i = 0; i < data.meals.length && i<20; i++) {
         meals += `
         <div class="col-lg-3 col-md-4 col-sm-12 rounded-3 myCard  p-2">
-            <a  href="../meals.html" class="text-light p-0">
+            <a  href="./meals.html" class="text-light p-0">
                 <div id='categoryclicked' onclick="setstorage('${data.meals[i].strIngredient}')"  class="  text-center overflow-hidden d-flex flex-column justify-content-center align-items-center">
 
  <div class="card bg-transparent">
