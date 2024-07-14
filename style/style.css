@@ -1,0 +1,26 @@
+.myCard{
+    overflow: hidden;
+    transition: all .5s;
+}
+.myCard:hover .layer{
+bottom: 0;
+transition: all .5s;
+}
+a{
+    text-decoration: none;
+}
+.layer{
+    content: "Meal name";
+    font-size: xx-large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: all .5s;
+}

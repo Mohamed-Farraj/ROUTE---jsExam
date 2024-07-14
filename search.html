@@ -13,21 +13,29 @@
     <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="style/all.min.css">
     <link rel="stylesheet" href="style/style.css">
-    <title>YUMMY</title>
+    <title>YUMMY-Search</title>
     <link rel="icon" type="image/x-icon" href="media/logo.png">
+    <style>
+      input::placeholder{
+        color: rgb(196, 196, 196) !important;
+        opacity: 1;
+      }
+    </style>
   </head>
   <body class="bg-black">
 <div class="container mt-5">
-  <div id="row" class="row g-4">
-    
-
+  <div id="alerterr" class="alert alert-danger d-none" role="alert">
+    the input you've submit got no data!
   </div>
-</div>
+  <div class="search-container d-flex flex-nowrap gap-3">
+    <input id="search-name" type="text" class="form-control text-capitalize w-50 bg-black text-white" placeholder="search by meal name"/>
+    <input id="search-first-letter" type="text" class="form-control text-capitalize w-50 bg-black text-white" maxlength="1" placeholder="search by meal first letter"/>
+  </div>
 
-<div class="bar">
-  <div class="slider h-100 p-2">
+  <div id="row-search" class="row g-4">
     
   </div>
+  
 </div>
 
   <script src="script/script.js"></script>
