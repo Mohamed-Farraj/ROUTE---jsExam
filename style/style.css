@@ -25,7 +25,7 @@ a{
     transition: all .5s;
 }
 
-.bar{
+nav{
     position: fixed;
     top: 0;
     left: 0;
